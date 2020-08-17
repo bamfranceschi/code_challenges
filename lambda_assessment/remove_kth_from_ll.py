@@ -24,7 +24,7 @@ def remove_kth_from_end(head, k):
         length_counter += 1
         current_head = current_head.next
 
-    # return the LL since there isn't a kth element
+    # return the LL (linked_list) since there isn't a kth element
     if k > length_counter:
         return head
 
@@ -39,7 +39,7 @@ def remove_kth_from_end(head, k):
     prev = head
     current_head = head.next
 
-    # traversing LL until we get to kth element
+    # traversing LL (linked_list) until we get to kth element so actually don't need the coutner, can tjust to current_head.next
     while k_counter < kth_element:
         k_counter += 1
         prev = current_head
@@ -49,3 +49,6 @@ def remove_kth_from_end(head, k):
     prev.next = current_head.next
     # return head
     return head
+
+# two traversals, which is 0(n) time complexity in worst case
+# space complexity, 2 counters, 4 variables. O(1)

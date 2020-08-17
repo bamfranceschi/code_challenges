@@ -33,3 +33,7 @@ def first_not_repeating_character(s):
     return result
 
     # return lower index
+
+# time complexity- 3 loops, but 0(n) nlogn + n
+# space complexity- set up 3 storage bins logn
+# improvements- could we use min() here on idx_uniques instead of sorting, to improve efficiency?

@@ -43,3 +43,6 @@ def uncover_spy(n, trust):
                 return -1
         else:
             return -1
+
+# time complexity I think is O(n)
+# space complexity I think is O(n) * 3, which is O(n)
